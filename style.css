@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+header {
+	position: absolute;
+	height: auto;
+    padding: 20px 0 0 150px;
+	width: 100%;
+}
+.main{
+    display: flex;
+}
+.main-left{
+    padding: 20px 150px;
+}
+.main-right{
+    width: 90%;
+	height: 100vh;
+	background-image: url(images/hero-desktop.jpg);
+	background-size: cover;
+}
+.main-right img {
+	width: 50%;
+	height: 100%;
+}
+
+.hero-txt{
+    padding-top: 150px;
+    width: 100%;
+}
+.hero-txt h1{
+    letter-spacing: .5rem;
+    padding-right: 20px;
+	font-size: 4.2rem;
+	font-weight: 200;
+	text-transform: uppercase;
+    margin-bottom: 1rem;
+	color: hsl(0, 36%, 70%);
+	line-height: 4.5rem;
+}
+.hero-txt h1 span{
+    color: hsl(0, 6%, 24%);
+	font-weight: 700;
+}
+.hero-txt p{
+	color: hsl(0, 36%, 70%);
+    line-height: 1.5rem;
+    padding-right: 20px;
+    margin-bottom: 1rem;
+}
+
+/* Form stylling */
+.hero-txt form {
+	position: relative;
+	display: block;
+	height: 50px;
+	width: 100%;
+	max-width: 400px;
+}
+.hero-txt form input {
+	position: absolute;
+	width: 100%;
+	outline: none;
+	border: 1px solid hsl(0, 36%, 70%);
+	height: 100%;
+	border-radius: 50px;
+	padding-left: 30px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.1rem;
+}
+.hero-txt form label {
+	visibility: hidden;
+	position: absolute;
+}
+.hero-txt form button {
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	border: none;
+	outline: none;
+	color: white;
+	width: 70px;
+	height: 100%;
+	border-radius: 50px;
+	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	box-shadow: 0px 0px 18px 1px #f4aaab82;
+	transition: .3s ease box-shadow;
+}
+.hero-txt form button:hover {
+	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsla(0, 52%, 80%, 0.781));
+	box-shadow: 0px 0px 13px 2px #f4aaabbf;
+}
+.hero-txt form input::placeholder {
+	color: hsl(0, 36%, 70%);
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.1rem;
+	opacity: .8;
+}
+.hero-txt form .error-icon {
+	display: inline-block;
+	position: absolute;
+	right: 85px;
+	top: 24%;
+	display: none;
+}
+.hero-txt form .error-text {
+	position: absolute;
+	left: 30px;
+	top: 60px;
+	font-size: 1rem;
+	display: none;
+}
+.hero-txt form.error .error-icon,
+.hero-txt form.error .error-text {
+	display: block;
+}
+.hero-txt form.error input {
+	border: 2px solid hsl(0, 93%, 68%);
+}
+
+/* Footer */
+footer {
+	padding: 10px 0;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: .8rem;
+	line-height: 1.2rem;
+}
+footer a {
+	color: aqua;
+	text-decoration: none;
+}
